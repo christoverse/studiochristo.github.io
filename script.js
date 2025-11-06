@@ -191,7 +191,7 @@ window.addEventListener('scroll',scrollActive)
     console.log(" form data = "+JSON.stringify(formData))
 
     try {
-      const response = await fetch('http://localhost:5000/send-email', {
+      const response = await fetch('https://contactemail-z8ay.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
@@ -214,4 +214,5 @@ window.addEventListener('scroll',scrollActive)
 
 
       // Attach event listener to form
+
   document.getElementById('contactForm').addEventListener('submit', submitForm);
