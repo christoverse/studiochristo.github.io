@@ -171,7 +171,6 @@ window.addEventListener('scroll',scrollActive)
 
 //contact form
  async function submitForm(event) {
-      alert(1)
     event.preventDefault();
     const  form = document.getElementById('contactForm')    
     // Get form values
@@ -216,3 +215,4 @@ window.addEventListener('scroll',scrollActive)
       // Attach event listener to form
 
   document.getElementById('contactForm').addEventListener('submit', submitForm);
+
